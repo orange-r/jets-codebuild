@@ -3,13 +3,14 @@ version: 0.1
 phases:
   install:
     commands:
-      - echo phases install started on `date`
+      - echo [`date`] phases install started
   pre_build:
     commands:
-      - echo phases pre_build started on `date`
+      - echo [`date`] phases pre_build started
   build:
     commands:
-      - echo phases build started on `date`
+      - echo [`date`]phases build started
+      - rspec
   post_build:
     commands:
-      - echo phases post_build started on `date`
+      - echo [`date`]phases post_build started
