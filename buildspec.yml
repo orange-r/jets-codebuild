@@ -10,8 +10,8 @@ phases:
       - rspec
   build:
     commands:
-      - echo [`date`]phases build started
+      - echo [`date`] phases build started
       - yes Y | jets deploy development
   post_build:
     commands:
-      - echo [`date`]phases post_build started
+      - echo [`date`] phases post_build started
