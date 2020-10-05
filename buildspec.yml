@@ -7,10 +7,11 @@ phases:
   pre_build:
     commands:
       - echo [`date`] phases pre_build started
+      - rspec
   build:
     commands:
       - echo [`date`]phases build started
-      - rspec
+      - jets deploy development
   post_build:
     commands:
       - echo [`date`]phases post_build started
