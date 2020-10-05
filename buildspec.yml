@@ -11,7 +11,6 @@ phases:
   build:
     commands:
       - echo [`date`] phases build started
-      - echo "cmd: yes Y | jets deploy development"
       - yes Y | jets deploy development
   post_build:
     commands:
