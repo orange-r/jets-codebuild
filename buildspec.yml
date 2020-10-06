@@ -11,7 +11,11 @@ phases:
   build:
     commands:
       - echo [`date`] phases build started
-      - yes Y | jets deploy development
+      - echo ==================
+      - echo $CODEBUILD_SOURCE_VERSION
+      - echo $CODEBUILD_WEBHOOK_EVENT
+      - echo $CODEBUILD_WEBHOOK_PULL_REQUEST_MERGED
+    # - yes Y | jets deploy development
   post_build:
     commands:
       - echo [`date`] phases post_build started
