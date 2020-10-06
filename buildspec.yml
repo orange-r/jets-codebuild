@@ -17,6 +17,7 @@ phases:
       - echo $CODEBUILD_WEBHOOK_PULL_REQUEST_MERGED
       - echo $CODEBUILD_WEBHOOK_TRIGGER
       - echo ${CODEBUILD_WEBHOOK_TRIGGER#branch/}
+      - echo ${CODEBUILD_RESOLVED_SOURCE_VERSION}
     # - yes Y | jets deploy development
   post_build:
     commands:
